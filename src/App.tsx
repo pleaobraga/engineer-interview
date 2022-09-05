@@ -1,12 +1,12 @@
 import { ChallengeComponent } from './ChallengeComponent'
-import './App.css'
+import './App.scss'
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <header className="App-header">
-        <div style={{ marginLeft: 25, display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-          <h1>Welcome To The Every.io Code Challenge.</h1>
+        <div style={{ marginLeft: 25, display: 'flex', flexDirection: 'row', alignItems: 'center', marginBottom: 30, marginTop: 30 }}>
+          <h1 >Welcome To The Every.io Code Challenge.</h1>
           <div style={{ marginLeft: 50 }}>
             <a
               target="_blank"
@@ -18,17 +18,7 @@ function App() {
           </div>
         </div>
       </header>
-      <main
-        style={{
-          width: 'calc(100vw - 50px)',
-          margin: '0 auto',
-          maxHeight: '100%',
-          background: '#fcfcfc',
-          border: '1px solid #000000',
-          boxSizing: 'border-box',
-          boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
-          borderRadius: 40,
-        }}>
+      <main className='code-box'>
         <ChallengeComponent />
       </main>
     </div>

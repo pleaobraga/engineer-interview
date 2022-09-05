@@ -1,0 +1,29 @@
+.input-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .input {
+        width: 70%;
+        height: 100%;
+
+        padding: 0 2rem;
+
+        font-size: 1.5rem;
+
+        &--error {
+            border-color: red;
+
+            &::placeholder {
+                color: red;
+            }
+        }
+    }
+
+    .error-message {
+        position: absolute;
+        bottom: -22px;
+
+        color: red;
+    }
+}
